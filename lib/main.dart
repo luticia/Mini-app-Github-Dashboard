@@ -1,19 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
-import '../models/beer.dart';
 
-class user {
-  final int id;
-  final String name;
-  final String image_url;
-
-  user.fromJSON(Map<String, dynamic> jsonMap) :
-        id = jsonMap['id'],
-        name = jsonMap['name'],
-        image_url = jsonMap['image_url'];
-}
 
 void main() {
   runApp(
